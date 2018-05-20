@@ -14,21 +14,27 @@ a {
   text-decoration: none;
 }
 
-header {
+.index-nav-bar {
   width: 100%;
   height: 800px;
-  background: url('../images/headerimg.png') no-repeat 50% 50%;
+  background: url('../images/headerimg.png');
+  background-position: center;
   background-size: cover;
   display: table;
   background-attachment: fixed;
 }
 
-.second {
+.about-nav-bar {
   width: 100%;
   height: 800px;
   background: url('../images/oooo.png') no-repeat 50% 50%;
   background-size: cover;
   background-position: top;
+}
+
+.necklacesNavBar {
+  width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -76,7 +82,6 @@ nav {
 nav ul {
   list-style: none;
   background: rgba(0, 0, 0, 0);
-  overflow: hidden;
   color: black;
   padding: 0;
   text-align: center;
@@ -178,9 +183,29 @@ h2 {
 
 .product-info {
   margin: auto;
+  margin-top: 0;
   width: 500px;
   height: auto;
   line-height: 40px;
+}
+
+.new-collection-info {
+  font-size: 12px;
+  font-weight: 300;
+  color: rgb(128, 128, 128);
+  width: 580px;
+  margin: auto;
+  line-height: 30px;
+  text-align: justify;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: table;
+  background-attachment: fixed;
+}
+
+.new-collection-info h5 {
+  color: black;
+  text-align: center;
 }
 
 /* buttons */
@@ -193,7 +218,7 @@ h2 {
   height: auto;
   width: 80px;
   color: black;
-  margin-left: 655px;
+  margin: auto;
   margin-top: 500px;
   padding: 7px;
   text-align: center;
@@ -215,6 +240,15 @@ h2 {
   margin-top: 300px;
 } */
 
+.social-media .twitter,
+.instagram,
+.facebook,
+.pinterest {
+  color: black;
+  font-size: 10px;
+  font-weight: 600;
+}
+
 /* containers */
 
 .newCollectionContainer {
@@ -235,10 +269,272 @@ h2 {
   background-attachment: fixed;
 }
 
-.promotionContainer {
+.promotion-container {
   display: flex;
+}
+
+.secondary-photo {
+  background-image: url("../images/_DSC7762.jpg");
+  width: 900px;
+  height: 700px;
+  background-size: cover;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.warehouse-container {
+  width: 100%;
+  height: 800px;
+  background: url('../images/SharonAttia5.jpg') no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.more-info {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.product {
+  background-image: url("../images/earringssec.png");
+  background-size: cover;
+  width: 700px;
+  height: 700px;
   margin: auto;
 }
+
+footer {
+  padding-top: 50px;
+}
+
+.social-media {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: table;
+  background-attachment: fixed;
+}
+
+.media-links ul {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.media-links ul li {
+  padding: 10px;
+  display: inline-block;
+}
+
+.careers {
+  width: 100%;
+  height: auto;
+}
+
+.careers ul {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.careers ul li {
+  padding: 15px;
+  display: inline-block;
+}
+
+.careers ul li a {
+  color: black;
+}
+
+/* pictures boxes */
+
+.necklaceBox {
+  margin-top: 70px;
+  border: 100px solid white;
+  width: 500px;
+  height: 700px;
+  background-image: url("../images/necklaacessec.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.earringBox {
+  border-bottom: 5px solid white;
+  width: 520px;
+  height: 520px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/_DSC7610.png");
+}
+
+.braceletBox {
+  width: 520px;
+  height: 520px;
+  background-size: cover;
+  background-image: url("../images/_DSC0877.png");
+  border-top: 5px solid white;
+  border-bottom: 9px solid white;
+}
+
+/* necklaces html */
+
+.big-content-container {
+  margin-top: 50px;
+  width: 900px;
+  height: 1000px;
+  margin: auto;
+}
+
+.first-line {
+  padding-top: 110px;
+  display: flex;
+}
+
+.box-1 {
+  background-image: url("../images/_DSC0203.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+}
+
+.box-2 {
+  background-image: url("../images/_DSC1705.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+
+}
+
+.box-3 {
+  background-image: url("../images/_DSC1930.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+
+}
+
+.second-line {
+  display: flex;
+}
+
+.box-4 {
+  background-image: url("../images/_DSC0716.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+
+}
+
+.box-5 {
+  background-image: url("../images/_DSC1832.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+
+}
+
+.box-6 {
+  background-image: url("../images/_DSC8768.png");
+  background-size: cover;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+}
+
+/* earrings html */
+
+.box-7 {
+  background-image: url("../images/_DSC0506.png");
+  background-size: cover;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+}
+
+.box-8 {
+  background-image: url("../images/_DSC0569.png");
+  background-size: cover;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+}
+
+.box-9 {
+  background-image: url("../images/_DSC0698.png");
+  background-size: cover;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+}
+
+.box-10 {
+  background-image: url("../images/_DSC0716.png");
+  background-size: cover;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+}
+
+.box-11 {
+  background-image: url("../images/earringssec.png");
+  background-size: cover;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+}
+
+.box-12 {
+  background-image: url("../images/_DSC1217.png");
+  background-size: cover;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+}
+
+/* bracelet html */
+
+.box-13 {
+  background-image: url("../images/_DSC1998.png");
+  background-size: cover;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+}
+
+.box-14 {
+  background-image: url("../images/_DSC0877.png");
+  background-size: cover;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+}
+
+.box-15 {
+  background-image: url("../images/bracesec.png");
+  background-size: cover;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+}
+
+.box-16 {
+  background-image: url("../images/_DSC0307.png");
+  background-size: cover;
+  height: 300px;
+  width: 400px;
+  border: 20px solid white;
+}
+
+/* forms */
 
 .arrow-up {
   width: 0;
@@ -248,7 +544,7 @@ h2 {
   border-right: 20px solid transparent;
   border-bottom: 20px solid white;
   top: 37px;
-  right: 670px;
+  left: 720px;
   display: none;
 }
 
@@ -414,66 +710,25 @@ input[type=text]#search {
   color: black;
 }
 
-.secondary-photo {
-  background-image: url("../images/_DSC7762.jpg");
-  width: 900px;
-  height: 700px;
-  background-size: cover;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 100px;
+#subscribe-form h5 {
+  text-align: center;
 }
 
-.warehouse-container {
+#subscribe-form {
   width: 100%;
-  height: 800px;
-  background: url('../images/SharonAttia5.jpg') no-repeat 50% 50%;
-  background-size: cover;
+  height: auto;
 }
 
-.more-info {
-  display: flex;
-}
-
-.product {
-  background-image: url("../images/earringssec.png");
-  background-size: cover;
-  width: 700px;
-  height: 700px;
-  margin: auto;
-}
-
-/* pictures boxes */
-
-
-
-.necklaceBox {
-  margin-top: 70px;
-  margin-left: 60px;
-  border: 100px solid white;
+#subscribe-email {
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 10px;
   width: 500px;
-  height: 700px;
-  background-image: url("../images/necklaacessec.png");
-  background-size: cover;
-}
-
-.earringBox {
-  border: 5px solid white;
-  border-bottom: 5px solid white;
-  width: 520px;
-  height: 520px;
-  background-size: cover;
-  background-image: url("../images/_DSC7610.png");
-}
-
-.braceletBox {
-  width: 520px;
-  height: 520px;
-  background-size: cover;
-  background-image: url("../images/_DSC0877.png");
-  border-top: 5px solid white;
-  border-bottom: 9px solid white;
-  border-left: 5px solid white;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid black;
+  text-align: center;
 }
 
 /* mobile styles */
@@ -546,9 +801,7 @@ input[type=text]#search {
     margin-left: 300px;
     margin-top: 200px;
   } */
-
   /* container */
-
   .promotionContainer {
     display: block;
   }

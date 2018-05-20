@@ -17,36 +17,121 @@
 <body>
 
   <div class="wrapper">
-    <header>
+    <header class="necklacesNavBar">
 
-      <nav>
+      <nav class="navBar">
 
         <div class="menu-icon">
           <i class="fa fa-bars fa-2px"></i>
         </div>
 
-        <a href="home.html">
+        <a href="index.html">
           <div class="logo">
-            RIVER&#256
+            RIVER&#916;
           </div>
         </a>
 
         <div class="menu">
           <ul>
             <li>
-              <a href="#">NEW</a>
+              <a href="#" class="menuLink">NEW</a>
             </li>
             <li>
-              <a href="#">ABOUT</a>
+              <a href="about.html" class="menuLink">ABOUT</a>
             </li>
             <li>
-              <a href="necklaces.html">SHOP</a>
+              <a href="necklaces.html" class="menuLink">SHOP</a>
             </li>
             <li>
-              <a href="#">SIGN IN</a>
+              <i class="fa fa-unlock-alt"></i>
+              <a href="#" id="sign-in" class="menuLink">SIGN IN</a>
+              <div class="arrow-up"></div>
+              <div class="sign-in-form">
+                <form>
+                  <div>
+                    <span id="signIn" class="menuLink">Sign In</span>
+                    <label>Username</label>
+                    <input type="text" placeholder="Username" id="username" required/>
+                  </div>
+
+                  <div>
+                    <label>Password</label>
+                    <input type="password" placeholder="Password" id="password" required/>
+                  </div>
+
+                  <div>
+                    <a href="#" class="forgotPassword">Forgot your password?</a>
+                  </div>
+
+                  <div class="submitButton">
+                    <input type="submit" value="Sign In" />
+                  </div>
+
+                  <div class="createAccount">
+                    <span class="account">Don't have an account?</span>
+                    <u>
+                      <a href=# id="createOne">Create one</a>
+                    </u>
+                  </div>
+
+                </form>
+              </div>
+
+              <div class="arrow-up2"></div>
+              <div class="account-form">
+                <form>
+                  <div>
+                    <span id="joinRivera">Join RIVER&#916</span>
+                    <label>First Name</label>
+                    <input type="text" placeholder="First name" id="firstName" required/>
+                  </div>
+
+                  <div>
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last name" id="lastName" required/>
+                  </div>
+
+                  <div>
+                    <label>Email</label>
+                    <input type="text" placeholder="E-mail" id="email" required/>
+                  </div>
+
+                  <div>
+                    <label>Password</label>
+                    <input type="password" placeholder="Password" id="password" required/>
+                  </div>
+
+                  <div class="submitButton">
+                    <input type="submit" value="Sign Up" />
+                  </div>
+
+                  <div class="account">
+                    <span class="alreadyAccount">Already have an account?</span>
+                    <u>
+                      <a href=# id="sign-in">Sign In</a>
+                    </u>
+                  </div>
+
+                </form>
+              </div>
+
             </li>
             <li>
-              <a href="#">SEARCH</a>
+              <i class="fa fa-search"></i>
+              <a href="#" id="search-button">SEARCH</a>
+              <div class="arrow-up3"></div>
+              <div class="search-form">
+                <form>
+                  <div>
+                    <label>Search</label>
+                    <input type="text" id="search" placeholder="Search" required/>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <i class="fa fa-shopping-bag"></i>
+            <li>
+              <a href="#" class="menuLink">BAG</a>
             </li>
           </ul>
         </div>
@@ -54,28 +139,20 @@
       </nav>
 
     </header>
-  </div>
 
-  <div class="contentcontainer">
-    <div class="leftcontainershop">
-      <div class="box1"></div>
-    </div>
+    <div class="big-content-container">
+      <div class="first-line">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+      </div>
 
-    <div class="rightcontainershop">
-      <div class="box2"></div>
-      <div class="box3"></div>
-    </div>
-  </div>
+      <div class="second-line">
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+        <div class="box-6"></div>
+      </div>
 
-  <div class="contentcontainer2">
-
-    <div class="leftcontainershop1">
-      <div class="box4"></div>
-      <div class="box5"></div>
-    </div>
-
-    <div class="rightcontainershop1">
-      <div class="box6"></div>
     </div>
 
   </div>
