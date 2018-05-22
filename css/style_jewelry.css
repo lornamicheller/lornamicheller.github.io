@@ -14,27 +14,96 @@ a {
   text-decoration: none;
 }
 
-.index-nav-bar {
+.navBar {
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: white;
   width: 100%;
-  height: 800px;
-  background: url('../images/headerimg.png');
-  background-position: center;
-  background-size: cover;
-  display: table;
-  background-attachment: fixed;
 }
 
-.about-nav-bar {
+.logo {
+  float: left;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  margin-left: 10px;
+}
+
+.logo a {
+  color: black;
+}
+
+.menu{
+  position: absolute;
+  right: 20px;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  margin: 20px;
+  transition: color 0.3s;
+}
+
+.header {
   width: 100%;
-  height: 800px;
-  background: url('../images/oooo.png') no-repeat 50% 50%;
+  height: 600px;
+}
+
+.btn {
+  display:none;
+  position: absolute;
+  right: 20px;
+}
+
+.btn span {
+  display: block;
+  margin: 6px;
+  width: 40px;
+  height: 3px;
+  color: white;
+  background: black;
+}
+
+.first-head {
+  width: 100%;
+  height: 900px;
+  background-image: url("../images/headerimg.png");
   background-size: cover;
   background-position: top;
 }
 
-.necklacesNavBar {
+.about-head {
   width: 100%;
-  height: auto;
+  height: 900px;
+  background-image: url("../images/oooo.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.shop-bar ul {
+  list-style: none;
+  color: black;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+.shop-bar ul li {
+  display: inline-block;
+  padding: 20px;
+  padding-top: 80px;
+}
+
+.shop-bar ul li a {
+  color: black;
+  font-weight: 800;
+  font-size: 10px;
 }
 
 h1 {
@@ -55,67 +124,6 @@ h1 {
   padding-bottom: 50px;
   display: table;
   background-attachment: fixed;
-}
-
-.logo {
-  position: fixed;
-  float: left;
-  margin: 16px 36px;
-  color: black;
-  font-weight: 800;
-  font-size: 24px;
-}
-
-/* .this-is-us {
-  font-size: 55px;
-  color: white;
-  font-weight: 800;
-  padding-left: 100px;
-  padding-top: 500px;
-} */
-
-nav {
-  position: fixed;
-  width: 100%;
-}
-
-nav ul {
-  list-style: none;
-  background: rgba(0, 0, 0, 0);
-  color: black;
-  padding: 0;
-  text-align: center;
-  margin: 0;
-  transition: 1s;
-}
-
-nav.black ul {
-  background: white;
-}
-
-nav ul li {
-  display: inline-block;
-  padding: 20px;
-}
-
-.menuLink {
-  color: black;
-  font-size: 16px;
-}
-
-.menu-icon {
-  width: 100%;
-  background: white;
-  text-align: right;
-  box-sizing: border-box;
-  padding: 15px 24px;
-  cursor: pointer;
-  color: black;
-  display: none;
-}
-
-.fa {
-  margin-right: 5px;
 }
 
 .secondContent {
@@ -211,6 +219,7 @@ h2 {
 /* buttons */
 
 .shopButton {
+  position: fixed;
   border: 1px solid white;
   background-color: white;
   font-size: 15px;
@@ -260,17 +269,17 @@ h2 {
   background-attachment: fixed;
 }
 
-.saleContainer {
+.black-bar {
   width: 100%;
-  height: 800px;
-  background-image: url("../images/_DSC6595.png");
-  background-size: cover;
-  display: table;
-  background-attachment: fixed;
+  height: 100px;
+  background-color: black;
 }
 
-.promotion-container {
+.mainContainer {
   display: flex;
+  width: 1000px;
+  height: auto;
+  margin: auto;
 }
 
 .secondary-photo {
@@ -348,45 +357,60 @@ footer {
 /* pictures boxes */
 
 .necklaceBox {
-  margin-top: 70px;
-  border: 100px solid white;
-  width: 500px;
-  height: 700px;
+  border: 20px solid white;
+  width: 320px;
+  height: 320px;
   background-image: url("../images/necklaacessec.png");
   background-position: center;
   background-size: cover;
 }
 
 .earringBox {
-  border-bottom: 5px solid white;
-  width: 520px;
-  height: 520px;
+  border: 20px solid white;
+  width: 320px;
+  height: 320px;
   background-size: cover;
   background-position: center;
   background-image: url("../images/_DSC7610.png");
 }
 
 .braceletBox {
-  width: 520px;
-  height: 520px;
+  border: 20px solid white;
+  width: 320px;
+  height: 320px;
   background-size: cover;
   background-image: url("../images/_DSC0877.png");
-  border-top: 5px solid white;
-  border-bottom: 9px solid white;
 }
 
 /* necklaces html */
 
 .big-content-container {
-  margin-top: 50px;
-  width: 900px;
-  height: 1000px;
+  width: 700px;
+  height: auto;
   margin: auto;
+  padding-bottom: 60px;
 }
 
 .first-line {
-  padding-top: 110px;
   display: flex;
+}
+
+.first-line a {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.second-line {
+  display: flex;
+}
+
+.second-line a {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .box-1 {
@@ -394,7 +418,7 @@ footer {
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
 }
 
@@ -403,9 +427,8 @@ footer {
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
-
 }
 
 .box-3 {
@@ -413,13 +436,8 @@ footer {
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
-
-}
-
-.second-line {
-  display: flex;
 }
 
 .box-4 {
@@ -427,9 +445,8 @@ footer {
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
-
 }
 
 .box-5 {
@@ -437,16 +454,16 @@ footer {
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
-
 }
 
 .box-6 {
   background-image: url("../images/_DSC8768.png");
   background-size: cover;
+  background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
 }
 
@@ -455,48 +472,54 @@ footer {
 .box-7 {
   background-image: url("../images/_DSC0506.png");
   background-size: cover;
+  background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
 }
 
 .box-8 {
   background-image: url("../images/_DSC0569.png");
   background-size: cover;
+  background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
 }
 
 .box-9 {
   background-image: url("../images/_DSC0698.png");
   background-size: cover;
+  background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
 }
 
 .box-10 {
-  background-image: url("../images/_DSC0716.png");
+  background-image: url("../images/_DSC9457.png");
   background-size: cover;
+  background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
 }
 
 .box-11 {
   background-image: url("../images/earringssec.png");
   background-size: cover;
+  background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
 }
 
 .box-12 {
   background-image: url("../images/_DSC1217.png");
   background-size: cover;
+  background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
 }
 
@@ -505,33 +528,333 @@ footer {
 .box-13 {
   background-image: url("../images/_DSC1998.png");
   background-size: cover;
+  background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
 }
 
 .box-14 {
   background-image: url("../images/_DSC0877.png");
   background-size: cover;
+  background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
 }
 
 .box-15 {
   background-image: url("../images/bracesec.png");
   background-size: cover;
+  background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
 }
 
 .box-16 {
   background-image: url("../images/_DSC0307.png");
   background-size: cover;
+  background-position: center;
   height: 300px;
-  width: 400px;
+  width: 200px;
   border: 20px solid white;
+}
+
+/* new collection */
+
+.box-17 {
+  background-image: url("../images/_DSC0235.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 200px;
+  border: 20px solid white;
+}
+
+.box-18 {
+  background-image: url("../images/_DSC1617.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 200px;
+  border: 20px solid white;
+}
+
+.box-19 {
+  background-image: url("../images/_DSC6871.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 200px;
+  border: 20px solid white;
+}
+
+.box-20 {
+  background-image: url("../images/_DSC7748.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 200px;
+  border: 20px solid white;
+}
+
+.box-21 {
+  background-image: url("../images/_DSC8212.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 200px;
+  border: 20px solid white;
+}
+
+.box-22 {
+  background-image: url("../images/_DSC8026.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 200px;
+  border: 20px solid white;
+}
+
+.product-page {
+  display: flex;
+  width: 1000px;
+  height: 800px;
+  margin: auto;
+}
+
+.product-image1 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC0203.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image2 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC1705.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image3 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC1930.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image4 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC0716.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image5 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC1832.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image6 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC8768.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image7 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC0506.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image8 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC0569.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image9 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC0698.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image10 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC9457.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image11 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/earringssec.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image12 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC1217.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image13 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC1998.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image14 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC0877.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image15 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/bracesec.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image16 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC0307.png");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image17 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC0235.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image18 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC1617.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image19 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC6871.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image20 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC7748.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image21 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC8212.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.product-image22 {
+  width: 400px;
+  height: 500px;
+  background-image: url("../images/_DSC8026.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.describe-product {
+  width: 400px;
+  height: 500px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin: auto;
+}
+
+.product-title {
+  padding: 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.product-description {
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.quantity-button {
+  padding: 15px;
+}
+
+#add-to-bag {
+  border: 1px solid black;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 /* forms */
@@ -701,8 +1024,6 @@ input[type=text]#search {
   width: 100%;
   height: 70px;
   border: 0;
-  font-size: 25px;
-  font-weight: 300;
   padding-left: 20px;
 }
 
@@ -710,13 +1031,15 @@ input[type=text]#search {
   color: black;
 }
 
-#subscribe-form h5 {
+footer h5 {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 #subscribe-form {
-  width: 100%;
+  width: 500px;
   height: auto;
+  margin: auto;
 }
 
 #subscribe-email {
@@ -734,36 +1057,47 @@ input[type=text]#search {
 /* mobile styles */
 
 @media(max-width: 580px) {
-  .logo {
-    position: fixed;
-    top: 0;
-    margin-top: 16px;
+  /* index */
+
+  .navBar {
+    overflow: visible;
   }
-  nav ul {
-    max-height: 0px;
-    background: white;
-  }
-  .showing {
-    max-height: 20em;
-  }
-  nav ul li {
-    box-sizing: border-box;
+
+  .menu {
     width: 100%;
-    padding: 24px 0;
-    text-align: center;
+    right: 0;
+    top: 80px;
+    background: white;
+    overflow: hidden;
+    max-height: 0;
   }
-  .menu-icon {
+
+  .menu a {
     display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
   }
-  header {
-    background: url('../images/headerimg.png');
+
+  .btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .show {
+    max-height: 500px;
+  }
+
+  .first-head {
+    background: url('../images/headerimg.png') no-repeat;
+    background-position: bottom;
     height: 300px;
-    width: 580px;
+    width: 100%;
+    background-size: 300px;
   }
   .firstContent {
     font-size: 16px;
-    width: 580px;
-    margin: auto;
+    width: 100%;
     font-size: 16px;
     color: gray;
     line-height: 30px;
@@ -773,90 +1107,448 @@ input[type=text]#search {
     text-align: center;
     padding-top: 10px;
   }
-  /* buttons */
-  .shopButton {
-    border: 1px solid white;
-    background-color: white;
-    font-size: 15px;
-    font-weight: 600;
-    height: auto;
-    width: 80px;
-    color: black;
-    margin-left: 240px;
-    margin-top: 500px;
-    padding: 7px;
-    text-align: center;
-    border-radius: 3px;
-  }
-  /* .collectionButton {
-    font-size: 50px;
-    font-weight: 800;
-    margin-left: 300px;
-    margin-top: 300px;
-  }
-  .collectionButton {
-    color: white;
-    font-size: 35px;
-    font-weight: 800;
-    margin-left: 300px;
-    margin-top: 200px;
-  } */
-  /* container */
-  .promotionContainer {
-    display: block;
-  }
-  .newCollectionContainer {
-    margin: auto;
-    width: 580px;
-    height: 400px;
-    background-size: cover;
-    background-image: url("../images/_DSC7820.png");
-  }
-  .saleContainer {
-    margin: auto;
-    width: 580px;
-    height: 400px;
-    background-size: cover;
-    background-image: url("../images/_DSC6595.png");
-  }
-  /* boxes */
-  .necklaceBox {
-    border: 0;
-    margin: auto;
-    width: 580px;
-    height: 400px;
-    background-image: url("../images/necklaacessec.png");
-    background-size: cover;
-  }
-  .earringBox {
-    border: 0;
-    margin: auto;
-    width: 580px;
-    height: 400px;
-    background-size: cover;
-    background-image: url("../images/_DSC7610.png");
-  }
-  .braceletBox {
-    border: 0;
-    margin: auto;
-    width: 580px;
-    height: 400px;
-    background-size: cover;
-    background-image: url("../images/_DSC0877.png");
-  }
   .secondContent {
-    width: 480px;
+    font-size: 16px;
+    width: 100%;
+    font-size: 16px;
     color: gray;
-    font-size: 16px;
-    width: 580px;
-    margin: auto;
-    font-size: 16px;
     line-height: 30px;
     text-align: justify;
   }
-  h2 {
-    text-align: center;
-    padding-top: 10px;
+  .new-collection-info {
+    font-size: 16px;
+    width: 100%;
+    font-size: 16px;
+    color: gray;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .mainContainer {
+    display: block;
+    width: 100%;
+  }
+  #subscribe-email {
+    width: 200px;
+    margin: auto;
+    margin-left: 60px;
+  }
+  .necklaceBox,
+  .earringBox,
+  .braceletBox {
+    border: none;
+  }
+  .newCollectionContainer {
+    background-position: top;
+    height: 150px;
+    width: 100%;
+    background-size: 300px;
+    background-image: url("../images/_DSC7820.png") no-repeat;
+    background-attachment: scroll;
+  }
+  .about-head {
+    background: url('../images/oooo.png') no-repeat;
+    background-position: bottom;
+    height: 300px;
+    width: 100%;
+    background-size: 300px;
+  }
+  .brand-info h6 {
     padding-bottom: 20px;
+  }
+  .brand-info {
+    font-size: 16px;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+    margin: 0;
+  }
+  .secondary-photo {
+    background-image: url("../images/_DSC7762.jpg") no-repeat;
+    width: 100%;
+    height: 200px;
+    background-size: 300px;
+    margin: auto;
+  }
+  .our-warehouse {
+    font-size: 16px;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+    margin: 0;
+  }
+  .warehouse-container {
+    background-image: url("../images/SharonAttia5.jpg") no-repeat;
+    width: 100%;
+    height: 200px;
+    background-size: 300px;
+    margin: auto;
+  }
+  .suppliers-info {
+    font-size: 16px;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+    margin: 0;
+  }
+  .more-info {
+    display: block;
+  }
+  .product {
+    background-image: url("../images/_earringssec.jpg") no-repeat;
+    width: 100%;
+    height: 200px;
+    background-size: 300px;
+    margin: auto;
+  }
+  .product-info {
+    font-size: 16px;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+    margin: 0;
+  }
+  .first-line {
+    display: block;
+  }
+  .second-line {
+    display: block;
+  }
+  .shop-bar ul {
+    list-style: none;
+    color: black;
+    padding: 0;
+    text-align: center;
+    margin: auto;
+  }
+  .shop-bar ul li {
+    display: inline-block;
+    padding: 5px;
+    padding-top: 80px;
+  }
+  .shop-bar ul li a {
+    color: black;
+    font-weight: 800;
+    font-size: 10px;
+  }
+  .box-1 {
+    background-image: url("../images/_DSC0203.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-2 {
+    background-image: url("../images/_DSC1705.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-3 {
+    background-image: url("../images/_DSC1930.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-4 {
+    background-image: url("../images/_DSC0716.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-5 {
+    background-image: url("../images/_DSC1832.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-6 {
+    background-image: url("../images/_DSC8768.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-7 {
+    background-image: url("../images/_DSC0506.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-8 {
+    background-image: url("../images/_DSC0569.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-9 {
+    background-image: url("../images/_DSC0698.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-10 {
+    background-image: url("../images/_DSC9457.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-11 {
+    background-image: url("../images/earringssec.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-12 {
+    background-image: url("../images/_DSC1217.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-13 {
+    background-image: url("../images/_DSC1998.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-14 {
+    background-image: url("../images/_DSC0877.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-15 {
+    background-image: url("../images/bracesec.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-16 {
+    background-image: url("../images/_DSC0307.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-17 {
+    background-image: url("../images/_DSC0235.jpg");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-18 {
+    background-image: url("../images/_DSC1617.jpg");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-19 {
+    background-image: url("../images/_DSC6871.jpg");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-20 {
+    background-image: url("../images/_DSC7748.jpg");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-21 {
+    background-image: url("../images/_DSC8212.jpg");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .box-22 {
+    background-image: url("../images/_DSC8026.jpg");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  .product-page {
+    width: 300px;
+    height: 1000px;
+    display: block;
+    padding-top: 70px;
+  }
+  #add-to-bag {
+    border: 1px solid black;
+    font-weight: 200;
+    font-size: 12px;
+    color: white;
+    background: black;
+    letter-spacing: 2px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 300px;
+  }
+  .describe-product {
+    font-size: 16px;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .product-image1 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image2 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image3 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image4 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image5 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image6 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image7 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image8 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image9 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image10 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image11 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image12 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image13 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image14 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image15 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image16 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image17 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image18 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image19 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image20 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image21 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .product-image22 {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
   }
 }
