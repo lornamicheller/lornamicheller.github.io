@@ -37,7 +37,7 @@ a {
   color: black;
 }
 
-.menu{
+.menu {
   position: absolute;
   right: 20px;
 }
@@ -56,7 +56,7 @@ a {
 }
 
 .btn {
-  display:none;
+  display: none;
   position: absolute;
   right: 20px;
 }
@@ -1058,11 +1058,9 @@ footer h5 {
 
 @media(max-width: 580px) {
   /* index */
-
   .navBar {
     overflow: visible;
   }
-
   .menu {
     width: 100%;
     right: 0;
@@ -1071,23 +1069,19 @@ footer h5 {
     overflow: hidden;
     max-height: 0;
   }
-
   .menu a {
     display: block;
     text-align: center;
     padding: 10px;
     margin: 0;
   }
-
   .btn {
     display: block;
     cursor: pointer;
   }
-
   .show {
     max-height: 500px;
   }
-
   .first-head {
     background: url('../images/headerimg.png') no-repeat;
     background-position: bottom;
@@ -1130,18 +1124,25 @@ footer h5 {
   #subscribe-email {
     width: 200px;
     margin: auto;
-    margin-left: 60px;
+    margin-left: -50px;
   }
+  #subscribe-form {
+    width: 100px;
+  } 
+  
   .necklaceBox,
   .earringBox,
   .braceletBox {
     border: none;
+    width: 100%;
+    background-repeat: no-repeat;
+
   }
   .newCollectionContainer {
-    background-position: top;
-    height: 150px;
+    background-position: center;
+    height: 200px;
     width: 100%;
-    background-size: 300px;
+    background-size: 500px;
     background-image: url("../images/_DSC7820.png") no-repeat;
     background-attachment: scroll;
   }
