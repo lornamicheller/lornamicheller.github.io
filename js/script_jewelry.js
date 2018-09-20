@@ -1,14 +1,14 @@
 /* global $ */
 
 
-// menu
+// mobile menu
 
 $('.btn').on('click', () => {
   $('.menu').toggleClass('show');
 });
 
 
-// sign in function
+// sign in and sign up function
 
 $(document).ready(function () {
   $('.sign-in-button').on('click', () => {
@@ -30,12 +30,27 @@ $(document).ready(function () {
     ('.sign-in-form').show();
   });
 });
-// search
+
+// search bar
 
 $(document).ready(function () {
   $('.search-button').on('click', () => {
     $('.search-form').toggle();
     $('.sign-in-form').hide();
+  });
+});
+
+// subscribe form
+
+$(document).ready(function () {
+  $('.subscribe-btn').on('click', () => {
+    $('.subscribe-box').fadeIn();
+  })
+})
+
+$(document).ready(function () {
+  $('.subscribe-box').on('click', () => {
+    $('.subscribe-box').hide('close-button');
   });
 });
 

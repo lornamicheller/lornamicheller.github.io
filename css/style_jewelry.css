@@ -859,7 +859,84 @@ footer {
 
 /* forms */
 
-.arrow-up {
+
+.subscribe-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.652);
+  display: none;
+}
+
+.subscribe-box h1 {
+  font-size: 80px;
+  font-weight: 100;
+  color: rgb(50, 49, 49);
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.subscribe-box h2,
+h3 {
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.subscribe-box form {
+  text-align: center;
+  line-height: 100px;
+}
+
+input[type=text]#subscribe-email-form {
+  width: 400px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+input[type=button]#subscribe-button {
+  width: 100px;
+  height: 40px; 
+  background: black;
+  color: white;
+}
+
+.close-button {
+  width: 30px;
+  height: 30px;
+  right: 0px;
+  position: absolute;
+}
+
+.close-button>div {
+  width: 24px;
+  height: 4px;
+  background: black;
+  position: absolute;
+  left: 3px;
+  top: 13px;
+}
+
+.close-button>div:first-child {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.close-button>div:last-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* .arrow-up {
   width: 0;
   height: 0;
   position: absolute;
@@ -869,7 +946,7 @@ footer {
   top: 23px;
   right: 263px;
   display: none;
-}
+} */
 
 .sign-in-form {
   position: absolute;
@@ -1048,10 +1125,12 @@ footer h5 {
 /* mobile styles */
 
 @media(max-width: 580px) {
+
   /* index */
   .navBar {
     overflow: visible;
   }
+
   .menu {
     width: 100%;
     right: 0;
@@ -1060,19 +1139,23 @@ footer h5 {
     overflow: hidden;
     max-height: 0;
   }
+
   .menu a {
     display: block;
     text-align: center;
     padding: 10px;
     margin: 0;
   }
+
   .btn {
     display: block;
     cursor: pointer;
   }
+
   .show {
     max-height: 500px;
   }
+
   .first-head {
     background: url('../images/headerimg.png') no-repeat;
     background-position: bottom;
@@ -1080,6 +1163,7 @@ footer h5 {
     width: 100%;
     background-size: 300px;
   }
+
   .firstContent {
     font-size: 16px;
     width: 100%;
@@ -1088,10 +1172,12 @@ footer h5 {
     line-height: 30px;
     text-align: justify;
   }
+
   h1 {
     text-align: center;
     padding-top: 10px;
   }
+
   .secondContent {
     font-size: 16px;
     width: 100%;
@@ -1100,6 +1186,7 @@ footer h5 {
     line-height: 30px;
     text-align: justify;
   }
+
   .new-collection-info {
     font-size: 16px;
     width: 100%;
@@ -1108,19 +1195,22 @@ footer h5 {
     line-height: 30px;
     text-align: justify;
   }
+
   .mainContainer {
     display: block;
     width: 100%;
   }
+
   #subscribe-email {
     width: 200px;
     margin: auto;
     margin-left: -50px;
   }
+
   #subscribe-form {
     width: 100px;
-  } 
-  
+  }
+
   .necklaceBox,
   .earringBox,
   .braceletBox {
@@ -1129,6 +1219,7 @@ footer h5 {
     background-repeat: no-repeat;
 
   }
+
   .newCollectionContainer {
     background-position: center;
     height: 200px;
@@ -1137,6 +1228,7 @@ footer h5 {
     background-image: url("../images/_DSC7820.png") no-repeat;
     background-attachment: scroll;
   }
+
   .about-head {
     background: url('../images/oooo.png') no-repeat;
     background-position: bottom;
@@ -1144,9 +1236,11 @@ footer h5 {
     width: 100%;
     background-size: 300px;
   }
+
   .brand-info h6 {
     padding-bottom: 20px;
   }
+
   .brand-info {
     font-size: 16px;
     width: 100%;
@@ -1156,6 +1250,7 @@ footer h5 {
     text-align: justify;
     margin: 0;
   }
+
   .secondary-photo {
     background-image: url("../images/_DSC7762.jpg") no-repeat;
     width: 100%;
@@ -1163,6 +1258,7 @@ footer h5 {
     background-size: 300px;
     margin: auto;
   }
+
   .our-warehouse {
     font-size: 16px;
     width: 100%;
@@ -1172,6 +1268,7 @@ footer h5 {
     text-align: justify;
     margin: 0;
   }
+
   .warehouse-container {
     background-image: url("../images/SharonAttia5.jpg") no-repeat;
     width: 100%;
@@ -1179,6 +1276,7 @@ footer h5 {
     background-size: 300px;
     margin: auto;
   }
+
   .suppliers-info {
     font-size: 16px;
     width: 100%;
@@ -1188,9 +1286,11 @@ footer h5 {
     text-align: justify;
     margin: 0;
   }
+
   .more-info {
     display: block;
   }
+
   .product {
     background-image: url("../images/_earringssec.jpg") no-repeat;
     width: 100%;
@@ -1198,6 +1298,7 @@ footer h5 {
     background-size: 300px;
     margin: auto;
   }
+
   .product-info {
     font-size: 16px;
     width: 100%;
@@ -1207,12 +1308,15 @@ footer h5 {
     text-align: justify;
     margin: 0;
   }
+
   .first-line {
     display: block;
   }
+
   .second-line {
     display: block;
   }
+
   .shop-bar ul {
     list-style: none;
     color: black;
@@ -1220,16 +1324,19 @@ footer h5 {
     text-align: center;
     margin: auto;
   }
+
   .shop-bar ul li {
     display: inline-block;
     padding: 5px;
     padding-top: 80px;
   }
+
   .shop-bar ul li a {
     color: black;
     font-weight: 800;
     font-size: 10px;
   }
+
   .box-1 {
     background-image: url("../images/_DSC0203.png");
     background-repeat: no-repeat;
@@ -1238,6 +1345,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-2 {
     background-image: url("../images/_DSC1705.png");
     background-repeat: no-repeat;
@@ -1246,6 +1354,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-3 {
     background-image: url("../images/_DSC1930.png");
     background-repeat: no-repeat;
@@ -1254,6 +1363,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-4 {
     background-image: url("../images/_DSC0716.png");
     background-repeat: no-repeat;
@@ -1262,6 +1372,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-5 {
     background-image: url("../images/_DSC1832.png");
     background-repeat: no-repeat;
@@ -1270,6 +1381,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-6 {
     background-image: url("../images/_DSC8768.png");
     background-repeat: no-repeat;
@@ -1278,6 +1390,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-7 {
     background-image: url("../images/_DSC0506.png");
     background-repeat: no-repeat;
@@ -1286,6 +1399,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-8 {
     background-image: url("../images/_DSC0569.png");
     background-repeat: no-repeat;
@@ -1294,6 +1408,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-9 {
     background-image: url("../images/_DSC0698.png");
     background-repeat: no-repeat;
@@ -1302,6 +1417,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-10 {
     background-image: url("../images/_DSC9457.png");
     background-repeat: no-repeat;
@@ -1310,6 +1426,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-11 {
     background-image: url("../images/earringssec.png");
     background-repeat: no-repeat;
@@ -1318,6 +1435,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-12 {
     background-image: url("../images/_DSC1217.png");
     background-repeat: no-repeat;
@@ -1326,6 +1444,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-13 {
     background-image: url("../images/_DSC1998.png");
     background-repeat: no-repeat;
@@ -1334,6 +1453,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-14 {
     background-image: url("../images/_DSC0877.png");
     background-repeat: no-repeat;
@@ -1342,6 +1462,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-15 {
     background-image: url("../images/bracesec.png");
     background-repeat: no-repeat;
@@ -1350,6 +1471,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-16 {
     background-image: url("../images/_DSC0307.png");
     background-repeat: no-repeat;
@@ -1358,6 +1480,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-17 {
     background-image: url("../images/_DSC0235.jpg");
     background-repeat: no-repeat;
@@ -1366,6 +1489,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-18 {
     background-image: url("../images/_DSC1617.jpg");
     background-repeat: no-repeat;
@@ -1374,6 +1498,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-19 {
     background-image: url("../images/_DSC6871.jpg");
     background-repeat: no-repeat;
@@ -1382,6 +1507,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-20 {
     background-image: url("../images/_DSC7748.jpg");
     background-repeat: no-repeat;
@@ -1390,6 +1516,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-21 {
     background-image: url("../images/_DSC8212.jpg");
     background-repeat: no-repeat;
@@ -1398,6 +1525,7 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .box-22 {
     background-image: url("../images/_DSC8026.jpg");
     background-repeat: no-repeat;
@@ -1406,12 +1534,14 @@ footer h5 {
     width: 300px;
     margin: 0;
   }
+
   .product-page {
     width: 300px;
     height: 1000px;
     display: block;
     padding-top: 70px;
   }
+
   #add-to-bag {
     border: 1px solid black;
     font-weight: 200;
@@ -1423,6 +1553,7 @@ footer h5 {
     margin-top: 20px;
     width: 300px;
   }
+
   .describe-product {
     font-size: 16px;
     width: 100%;
@@ -1433,111 +1564,133 @@ footer h5 {
     margin: 0;
     margin-bottom: 40px;
   }
+
   .product-image1 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image2 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image3 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image4 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image5 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image6 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image7 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image8 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image9 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image10 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image11 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image12 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image13 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image14 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image15 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image16 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image17 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image18 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image19 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image20 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image21 {
     width: 300px;
     height: 300px;
     background-size: 300px;
   }
+
   .product-image22 {
     width: 300px;
     height: 300px;
